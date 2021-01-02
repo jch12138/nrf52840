@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=MPPLD-810VF-X7WRZ-J3XQP-6XJR7-QFURH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Chenway\Documents\nrf52840\project.uvprojx
+Project File Date:  01/02/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'rtthread'
+compiling application.c...
+applications\application.c(29): warning:  #177-D: variable "default_kv_table"  was declared but never referenced
+  static struct fdb_default_kv_node default_kv_table[] = {
+applications\application.c(36): warning:  #177-D: variable "kvdb"  was declared but never referenced
+  static struct fdb_kvdb kvdb = { 0 };
+applications\application.c: 2 warnings, 0 errors
+compiling drv_qspi_flash.c...
+compiling drv_flash.c...
+libraries\drivers\drv_flash.c(132): warning:  #188-D: enumerated type mixed with another type
+      nrfx_err_t result = RT_EOK;
+libraries\drivers\drv_flash.c: 1 warning, 0 errors
+compiling fal.c...
+compiling fal_flash.c...
+compiling fal_partition.c...
+compiling fdb.c...
+compiling fdb_cmd.c...
+compiling fal_rtt.c...
+compiling fdb_file.c...
+compiling fdb_tsdb.c...
+compiling fdb_kvdb.c...
+compiling fdb_utils.c...
+compiling kvdb_basic_sample.c...
+compiling kvdb_type_blob_sample.c...
+compiling kvdb_type_string_sample.c...
+compiling tsdb_sample.c...
+linking...
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_req_observers0$$Base (referred from nrf_sdh.o). Unused section has been removed.
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_req_observers0$$Limit (referred from nrf_sdh.o). Unused section has been removed.
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_req_observers1$$Base (referred from nrf_sdh.o). Unused section has been removed.
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_req_observers1$$Limit (referred from nrf_sdh.o). Unused section has been removed.
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_stack_observers1$$Base (referred from nrf_sdh.o). Unused section has been removed.
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_stack_observers1$$Limit (referred from nrf_sdh.o). Unused section has been removed.
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_state_observers1$$Base (referred from nrf_sdh.o). Unused section has been removed.
+.\build\rtthread.axf: Warning: L6330W: Undefined symbol sdh_state_observers1$$Limit (referred from nrf_sdh.o). Unused section has been removed.
+Program Size: Code=138422 RO-data=15478 RW-data=1100 ZI-data=23140  
+Finished: 0 information, 8 warning and 0 error messages.
+After Build - User command #1: fromelf --bin .\build\rtthread.axf --output rtthread.bin
+".\build\rtthread.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.35.0.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.35.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Chenway\AppData\Local\Arm\Packs\NordicSemiconductor\nRF_DeviceFamilyPack\8.35.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
