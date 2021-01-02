@@ -36,6 +36,7 @@
 .\build\select.o: rt-thread\components\drivers\include\rtdevice.h
 .\build\select.o: rt-thread\components\drivers\include\ipc/poll.h
 .\build\select.o: rt-thread\components\drivers\include\ipc/ringblk_buf.h
+.\build\select.o: rt-thread\components\drivers\include\drivers/rtc.h
 .\build\select.o: rt-thread\components\drivers\include\drivers/mtd_nor.h
 .\build\select.o: rt-thread\components\drivers\include\drivers/serial.h
 .\build\select.o: rt-thread\components\drivers\include\drivers/pin.h

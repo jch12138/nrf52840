@@ -33,6 +33,7 @@
 .\build\pipe.o: rt-thread\components\drivers\include\rtdevice.h
 .\build\pipe.o: rt-thread\components\drivers\include\ipc/poll.h
 .\build\pipe.o: rt-thread\components\drivers\include\ipc/ringblk_buf.h
+.\build\pipe.o: rt-thread\components\drivers\include\drivers/rtc.h
 .\build\pipe.o: rt-thread\components\drivers\include\drivers/mtd_nor.h
 .\build\pipe.o: rt-thread\components\drivers\include\drivers/serial.h
 .\build\pipe.o: rt-thread\components\drivers\include\drivers/pin.h

@@ -41,6 +41,7 @@
 .\build\unistd.o: rt-thread\components\drivers\include\rtdevice.h
 .\build\unistd.o: rt-thread\components\drivers\include\ipc/poll.h
 .\build\unistd.o: rt-thread\components\drivers\include\ipc/ringblk_buf.h
+.\build\unistd.o: rt-thread\components\drivers\include\drivers/rtc.h
 .\build\unistd.o: rt-thread\components\drivers\include\drivers/mtd_nor.h
 .\build\unistd.o: rt-thread\components\drivers\include\drivers/serial.h
 .\build\unistd.o: rt-thread\components\drivers\include\drivers/pin.h

@@ -33,6 +33,7 @@
 .\build\ringblk_buf.o: rt-thread\components\drivers\include\rtdevice.h
 .\build\ringblk_buf.o: rt-thread\components\drivers\include\ipc/poll.h
 .\build\ringblk_buf.o: rt-thread\components\drivers\include\ipc/ringblk_buf.h
+.\build\ringblk_buf.o: rt-thread\components\drivers\include\drivers/rtc.h
 .\build\ringblk_buf.o: rt-thread\components\drivers\include\drivers/mtd_nor.h
 .\build\ringblk_buf.o: rt-thread\components\drivers\include\drivers/serial.h
 .\build\ringblk_buf.o: rt-thread\components\drivers\include\drivers/pin.h

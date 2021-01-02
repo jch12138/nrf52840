@@ -87,6 +87,7 @@
 #define RT_USING_PIN
 #define RT_USING_ADC
 #define RT_USING_MTD_NOR
+#define RT_USING_RTC
 
 /* Using USB */
 
@@ -251,6 +252,10 @@
 #define MCU_SRAM_START_ADDRESS 0x20000000
 #define MCU_SRAM_SIZE_KB 256
 #define MCU_FLASH_PAGE_SIZE 0x1000
+#define BSP_USING_ONCHIP_RTC
+#define NRFX_RTC0_ENABLED 1
+#define NRFX_RTC2_ENABLED 1
+#define RTC_INSTANCE_ID 2
 #define BSP_USING_SOFTDEVICE
 
 #endif
