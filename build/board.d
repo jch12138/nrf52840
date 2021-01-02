@@ -56,3 +56,8 @@
 .\build\board.o: packages\nrfx-v2.1.0\drivers\include\nrfx_clock.h
 .\build\board.o: packages\nrfx-v2.1.0\hal/nrf_clock.h
 .\build\board.o: packages\nrfx-v2.1.0\drivers\include\nrfx_power_clock.h
+.\build\board.o: rt-thread\components\finsh\finsh.h
+.\build\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\build\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+.\build\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\build\board.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

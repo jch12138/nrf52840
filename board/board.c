@@ -16,6 +16,17 @@
 #include "drv_uart.h"
 #include <nrfx_clock.h>
 
+
+#ifdef RT_USING_FINSH
+#include <finsh.h>
+static void reboot(uint8_t argc, char **argv)
+{
+    rt_hw_cpu_reset();
+}
+FINSH_FUNCTION_EXPORT_ALIAS(reboot, __cmd_reboot, Reboot System);
+#endif /* RT_USING_FINSH */
+
+
 /**
  * This is the timer interrupt service routine.
  *
