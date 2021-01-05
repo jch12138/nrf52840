@@ -11,10 +11,18 @@
 
 #include <rtthread.h>
 #include <rtdevice.h>
+
 #define DK_BOARD_LED_1  13
 #define DK_BOARD_LED_2  14
 
 #define FS_PARTITION_NAME  "filesystem"
+
+
+#define LOG_TAG     "main"     // 该模块对应的标签。不定义时，默认：NO_TAG
+#define LOG_LVL     LOG_LVL_DBG   // 该模块对应的日志输出级别。不定义时，默认：调试级别
+#include <ulog.h>
+
+
 
 #include "fal.h"
 #include "dfs_file.h"
@@ -56,36 +64,39 @@ static fdb_time_t get_time(void)
 int main(void)
 {
     fal_init();
+    ulog_init();
     
-    
-
     struct rt_device *flash_dev = fal_mtd_nor_device_create(FS_PARTITION_NAME);
 
     if (flash_dev == NULL)
     {
-        rt_kprintf("Can't create a mtd device on '%s' partition.\n", FS_PARTITION_NAME);
+        LOG_E("Can't create a mtd device on '%s' partition.\n", FS_PARTITION_NAME);
     }
     else
     {
-        rt_kprintf("Create a mtd device on the %s partition of flash successful.\n", FS_PARTITION_NAME);
+        LOG_I("Create a mtd device on the %s partition of flash successful.\n", FS_PARTITION_NAME);
     }
 
     if(rt_device_find(FS_PARTITION_NAME) != RT_NULL)
     {
-        //dfs_mkfs("lfs", FS_PARTITION_NAME);
+        //
 
         if (dfs_mount(FS_PARTITION_NAME, "/", "lfs", 0, 0) == RT_EOK)
         {
-            rt_kprintf("onchip lfs filesystem mount to '/'\n");
+            LOG_I("onchip lfs filesystem mount to '/'\n");
         }
         else
         {
-            rt_kprintf("onchip lfs filesystem mount to '/' failed!\n");
+            LOG_E("onchip lfs filesystem mount to '/' failed!\n");
+            LOG_D("formating this fartion...\n");
+            dfs_mkfs("lfs", FS_PARTITION_NAME);
+            LOG_I("reboot now...");
+            rt_hw_cpu_reset();
         }
     }
     else
     {
-        rt_kprintf("find filesystem portion failed\r\n");
+        LOG_E("find filesystem portion failed\r\n");
     }
 
     fdb_err_t result;
@@ -109,9 +120,11 @@ int main(void)
     if (result != FDB_NO_ERR) {
         return -1;
     }
+    
+    //result = fdb_kvdb_init()
 
     /* run TSDB sample */
-    tsdb_sample(&tsdb);
+    //tsdb_sample(&tsdb);
 
     int count = 1; 
     rt_pin_mode(DK_BOARD_LED_1, PIN_MODE_OUTPUT);

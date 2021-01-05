@@ -131,6 +131,8 @@
 ".\build\ble_nus.o"
 ".\build\ble_advdata.o"
 ".\build\ble_app_uart.o"
+".\build\ulog.o"
+".\build\console_be.o"
 --nodebug --strict --scatter ".\build\rtthread.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

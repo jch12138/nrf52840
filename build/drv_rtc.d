@@ -71,3 +71,5 @@
 .\build\drv_rtc.o: packages\nrfx-v2.1.0\hal/nrf_clock.h
 .\build\drv_rtc.o: packages\nrfx-v2.1.0\drivers\include\nrfx_power_clock.h
 .\build\drv_rtc.o: rt-thread\include\rtdbg.h
+.\build\drv_rtc.o: rt-thread\components\utilities\ulog\ulog.h
+.\build\drv_rtc.o: rt-thread\components\utilities\ulog\ulog_def.h

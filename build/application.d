@@ -37,6 +37,8 @@
 .\build\application.o: rt-thread\components\drivers\include\drivers/serial.h
 .\build\application.o: rt-thread\components\drivers\include\drivers/pin.h
 .\build\application.o: rt-thread\components\drivers\include\drivers/adc.h
+.\build\application.o: rt-thread\components\utilities\ulog\ulog.h
+.\build\application.o: rt-thread\components\utilities\ulog\ulog_def.h
 .\build\application.o: packages\fal-v0.5.0\inc\fal.h
 .\build\application.o: board\fal_cfg.h
 .\build\application.o: board\board.h

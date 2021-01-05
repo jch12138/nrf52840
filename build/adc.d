@@ -40,3 +40,5 @@
 .\build\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\build\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\build\adc.o: rt-thread\include\rtdbg.h
+.\build\adc.o: rt-thread\components\utilities\ulog\ulog.h
+.\build\adc.o: rt-thread\components\utilities\ulog\ulog_def.h

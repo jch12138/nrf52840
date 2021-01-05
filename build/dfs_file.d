@@ -45,5 +45,7 @@
 .\build\dfs_file.o: rt-thread\components\dfs\include\dfs_fs.h
 .\build\dfs_file.o: rt-thread\components\dfs\include\dfs_private.h
 .\build\dfs_file.o: rt-thread\include\rtdbg.h
+.\build\dfs_file.o: rt-thread\components\utilities\ulog\ulog.h
+.\build\dfs_file.o: rt-thread\components\utilities\ulog\ulog_def.h
 .\build\dfs_file.o: rt-thread\components\finsh\finsh.h
 .\build\dfs_file.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h

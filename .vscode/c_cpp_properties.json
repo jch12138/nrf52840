@@ -47,6 +47,7 @@
                 "C:/Users/Chenway/Documents/nrf52840/rt-thread/components/finsh",
                 "C:/Users/Chenway/Documents/nrf52840/rt-thread/components/libc/compilers/common",
                 "C:/Users/Chenway/Documents/nrf52840/rt-thread/components/libc/compilers/newlib",
+                "C:/Users/Chenway/Documents/nrf52840/rt-thread/components/utilities/ulog",
                 "C:/Users/Chenway/Documents/nrf52840/rt-thread/include",
                 "C:/Users/Chenway/Documents/nrf52840/rt-thread/libcpu/arm/common",
                 "C:/Users/Chenway/Documents/nrf52840/rt-thread/libcpu/arm/cortex-m4"

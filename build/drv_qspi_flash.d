@@ -57,3 +57,5 @@
 .\build\drv_qspi_flash.o: packages\fal-v0.5.0\inc\fal_def.h
 .\build\drv_qspi_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\build\drv_qspi_flash.o: rt-thread\include\rtdbg.h
+.\build\drv_qspi_flash.o: rt-thread\components\utilities\ulog\ulog.h
+.\build\drv_qspi_flash.o: rt-thread\components\utilities\ulog\ulog_def.h

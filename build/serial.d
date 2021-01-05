@@ -39,6 +39,8 @@
 .\build\serial.o: rt-thread\components\drivers\include\drivers/pin.h
 .\build\serial.o: rt-thread\components\drivers\include\drivers/adc.h
 .\build\serial.o: rt-thread\include\rtdbg.h
+.\build\serial.o: rt-thread\components\utilities\ulog\ulog.h
+.\build\serial.o: rt-thread\components\utilities\ulog\ulog_def.h
 .\build\serial.o: rt-thread\components\dfs\include\dfs_posix.h
 .\build\serial.o: rt-thread\components\dfs\include\dfs_file.h
 .\build\serial.o: rt-thread\components\dfs\include\dfs.h
