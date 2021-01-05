@@ -26,7 +26,7 @@
     {.tm_year = year - 1900, .tm_mon = month - 1, .tm_mday = day, .tm_hour = hour, .tm_min = minute, .tm_sec = second}
 
 #ifndef ONCHIP_RTC_TIME_DEFAULT
-#define ONCHIP_RTC_TIME_DEFAULT                    RTC_TIME_INIT(2018, 1, 1, 0, 0 ,0)
+#define ONCHIP_RTC_TIME_DEFAULT                    RTC_TIME_INIT(2021, 1, 1, 0, 0 ,0)
 #endif
 
 #ifndef RTC_INSTANCE_ID
